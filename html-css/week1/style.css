@@ -1,0 +1,129 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/*header styling*/
+.container-body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 250, 250, .07);
+}
+.main {
+    
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+.main-info {
+    text-align: center;
+    width: 600px;
+    position: relative;
+    padding: 10px 260px 10px;
+    font-size: 25px;
+}
+.about-me {
+    
+    margin-top: -30px;
+    text-align: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+.main-name {
+    font-size: 40px;
+}
+.descrive-myself {
+    margin-top: -20px;
+    padding: 15px;
+    background-color: rgba(255, 250, 250, .07);
+}
+.contact-links {
+    padding: 10px 200px 10px;
+}
+.contact-img {
+    width: 40px;
+    float: left;
+    padding-left: 42px;
+}
+.contact-text {
+    color: red;
+    position: relative;
+    float: left;
+    padding: 10px 8px 8px;    
+}
+/*main page styling*/
+/*Skills styling*/
+.container-skills {
+    width: 1200px;
+    height: 330px;
+    margin: 0 auto;
+    background-color: rgba(255, 250, 250, .07);
+}
+.skills {
+    text-align: left;
+    font-size: 20px;
+}
+.line1 {
+    border: 1px solid white;
+}  
+
+.h3description {
+    color: red;
+    text-align: center;
+    padding: 30px 10px 0px;
+}
+
+.front-end {
+    display: inline-block;
+    margin: auto;
+    width: 35%;
+    border: 3px ;
+    padding-left: 100px;
+    
+}
+.others {
+    width: 16%;
+    border: 3px ;
+    float: right;
+    
+}
+.back-end {
+    display: inline-block;
+    width: 10%;
+    border: 3px ;
+}
+/*Work experinece*/
+.container-experience{
+    width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    background-color: rgba(255, 250, 250, .07);
+    font-size: 20px;
+    
+}
+.h3experience {
+    text-align: center;
+    padding-top: 30px;
+    color: red;
+}
+.line2 {
+    border: 1px solid white;  
+}  
+.work-exp1 {
+    width: 400px;
+    margin-left: 82px;
+    position: relative;
+    float: left;
+}
+.work-exp2 {
+    width: 400px;
+    margin-left: 82px;
+    position: relative;
+    float: right;
+    margin-right: 82px;
+}
+.small-size {
+    font-size: 15px;
+    
+}
