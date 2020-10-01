@@ -178,4 +178,10 @@ body {
     margin-top: -1100px;
     margin-left: -170px;
     z-index: -1;
+    padding-bottom: 10px;
+}
+.footer {
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
 }
