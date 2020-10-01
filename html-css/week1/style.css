@@ -14,7 +14,7 @@ body {
 .container-body {
     width: 1200px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, .3);
+    
 }
 
 .main-info {
@@ -23,6 +23,7 @@ body {
     position: relative;
     padding: 10px 260px 10px;
     font-size: 25px;
+    
 }
 .about-me {
     
@@ -32,6 +33,8 @@ body {
 
 .profile-pic {
     border-radius: 50%;
+    background: #fafafa;
+  border:0.1em solid #FFFFFF;
 }
 .main-name {
     font-size: 40px;
@@ -40,10 +43,11 @@ body {
 .descrive-myself {
     margin-top: -20px;
     padding: 15px;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(2, 32, 59, .5);
+    
 }
 .contact-links {
-    padding: 10px 200px 10px;
+    padding: 10px 200px 40px;
 }
 .contact-img {
     width: 40px;
@@ -60,53 +64,46 @@ body {
 /*Skills styling*/
 .container-skills {
     width: 1200px;
-    height: 330px;
+    height: 360px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, 0.25);
 }
 .skills {
     text-align: left;
     font-size: 20px;
 }
-.line1 {
-    border: 1px solid white;
-}  
-
-.h3description {
-    color: white;
+.h3text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 550px;
+    padding-right:50px;
+    background: rgba(0, 0, 0, 0.15);
+    border:0.1em ;
     text-align: center;
-    padding: 20px 10px 0px;
-    font-family: 'Changa', sans-serif;
-    
-}
+    padding: 20px 10px 15px;
+    font-family: changa, sans-serif;
+}    
 
 .front-end {
     display: inline-block;
     margin: auto;
     width: 35%;
-    border: 3px ;
     padding-left: 100px;
-    
 }
 .others {
     width: 16%;
-    border: 3px ;
     float: right;
-    
 }
 .back-end {
     display: inline-block;
-    width: 10%;
-    border: 3px ;
 }
 /*Projects*/
 .container-projects {
     width: 1200px;
     height: 650px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, .3);
-    font-size: 20px;
-    
+    background: rgba(0, 0, 0, 0.25);
+    font-size: 20px; 
 }
 .project-box {
     width: 700px;
@@ -137,20 +134,14 @@ body {
 /*Work experinece*/
 .container-experience{
     width: 1200px;
-    height: 350px;
+    height: 390px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, 0.25);
     font-size: 20px;
     
 }
-.h3experience {
-    text-align: center;
-    padding-top: 30px;
-    color: White;
-}
-.line2 {
-    border: 1px solid white;  
-}  
+
+ 
 .work-exp1 {
     width: 400px;
     margin-left: 82px;
@@ -170,9 +161,9 @@ body {
 /* Education */
 .container-education {
     width: 1200px;
-    height: 250px;
+    height: 260px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, 0.25);
     font-size: 20px;
 }
 .education1 {
