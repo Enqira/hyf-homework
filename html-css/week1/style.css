@@ -3,7 +3,7 @@ body {
     background-color: black;
     color: white;
     font-family: sans-serif;
-
+    font-size: 16px;    
 }
 
 .container {
@@ -49,13 +49,23 @@ body {
 .contact-links {
     padding: 10px 200px 40px;
 }
+/* Links decoration */
+a:link {
+    text-decoration: none;  
+ }
+a:hover {
+    color: rgb(255, 147, 147);
+ }
+ a:visited {
+    color: rgb(255, 58, 58);
+  }
 .contact-img {
     width: 40px;
     float: left;
     padding-left: 42px;
 }
 .contact-text {
-    color: red;
+    color: white;
     position: relative;
     float: left;
     padding: 10px 8px 8px;    
@@ -66,7 +76,7 @@ body {
     width: 1200px;
     height: 360px;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(15, 62, 104, 0.99);    
 }
 .skills {
     text-align: left;
@@ -77,26 +87,36 @@ body {
     padding-bottom: 15px;
     padding-left: 550px;
     padding-right:50px;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 7, 13, 0.65);    
     border:0.1em ;
     text-align: center;
     padding: 20px 10px 15px;
     font-family: changa, sans-serif;
+    letter-spacing: 6px;
 }    
 
 .front-end {
     display: inline-block;
     margin: auto;
-    width: 35%;
+    width: 34%;
     padding-left: 100px;
 }
 .others {
-    width: 16%;
+    width: 22%;
     float: right;
 }
 .back-end {
     display: inline-block;
 }
+/* change bullet points to checkmarks */
+ul {
+    list-style: none;
+  }
+  
+  ul li:before {
+    content: '✓';
+    margin-right: 12px;
+  }
 /*Projects*/
 .container-projects {
     width: 1200px;
@@ -104,6 +124,7 @@ body {
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.25);
     font-size: 20px; 
+    background: rgba(15, 62, 104, 0.99);
 }
 .project-box {
     width: 700px;
@@ -126,6 +147,10 @@ body {
     font-size: 14px;
     padding-top: 5px;
     padding-right: 20px;
+    color: white;
+}
+.small-size-projects:visited {
+    color: rgb(255, 58, 58);
 }
 .project-links {
     display: inline-block;
@@ -136,7 +161,7 @@ body {
     width: 1200px;
     height: 390px;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(15, 62, 104, 0.99);;
     font-size: 20px;
     
 }
@@ -163,7 +188,7 @@ body {
     width: 1200px;
     height: 260px;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(15, 62, 104, 0.99);
     font-size: 20px;
 }
 .education1 {
@@ -179,9 +204,11 @@ body {
     margin-left: -170px;
     z-index: -1;
     padding-bottom: 10px;
+    
+    
 }
 .footer {
     width: 100%;
     text-align: center;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
 }
