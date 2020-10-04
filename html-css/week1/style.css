@@ -79,10 +79,9 @@ a:hover {
     background: rgba(15, 62, 104, 0.99);    
 }
 .skills {
-    text-align: left;
     font-size: 20px;
 }
-.h3text {
+.section-header {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 550px;
@@ -93,13 +92,29 @@ a:hover {
     padding: 20px 10px 15px;
     font-family: changa, sans-serif;
     letter-spacing: 6px;
+    margin-bottom: 0;
 }    
+.container-skills-section {
+    width: 200px;
+    height: 200px;    
+    display: inline-block;
+}
+.container-front-end {
+    padding-left: 82px;
+}
+.container-back-end {
+    position: relative;
+    left: 21%;   
+}
+.container-others {
+    float: right;
+    margin-right: 40px;
+}
 
-.front-end {
+/* .front-end {
     display: inline-block;
     margin: auto;
     width: 34%;
-    padding-left: 100px;
 }
 .others {
     width: 22%;
@@ -107,10 +122,11 @@ a:hover {
 }
 .back-end {
     display: inline-block;
-}
+} */
 /* change bullet points to checkmarks */
 ul {
     list-style: none;
+    padding-inline-start: 0%;
   }
   
   ul li:before {
