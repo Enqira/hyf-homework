@@ -1,0 +1,53 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.container{
+    height: auto;
+    margin: 0 auto;
+    font-family: sans-serif;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+/* upper header styling */
+.upper-header-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.upper-header-container > h1 {
+    align-items: center;
+    background-color: royalblue;
+}
+
+.upper-header-container > h4{
+    font-size: 16px;
+    color: #a3a3a3;
+    background-color: red;
+}
+.line {
+    width: 100% ;
+    margin: 0px;
+    padding: 0px;
+}
+/* navigation menu styling */
+nav {
+    
+}
+nav > ul {
+    list-style: none;
+    margin-inline-start: -40px;
+    display: flex;
+}
+nav > ul > li {
+    padding-right: 45px;
+    margin: 8px 0 8px;
+}
+/* main image styling */
+.main-image {
+    width: 100%;
+}
