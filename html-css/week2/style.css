@@ -3,51 +3,235 @@ body {
     height: auto;
     margin: 0 auto;
 }
-.container{
-    height: auto;
-    margin: 0 auto;
+
+.container {
+    height: 100%;
     font-family: sans-serif;
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;   
+    margin: 0 14%;
 }
+
+/* Section parragraphs font color */
+p {
+    color: rgb(124, 124, 124);
+}
+
+header div {
+    background-color: rgb(252, 252, 252);
+}
+
 /* upper header styling */
-.upper-header-container {
-    display: flex;
+.mainHeader {
     flex-direction: column;
-    
 }
 
+.mainHeader h1 {
+    margin: 70px 0 0;
 
-.upper-header-container > h1 {
-    align-items: center;
-    background-color: royalblue;
 }
 
-.upper-header-container > h4{
-    font-size: 16px;
-    color: #a3a3a3;
-    background-color: red;
+.mainHeader p {
+    margin: 0 0 70px;
 }
+
+/* line under header */
 .line {
-    width: 100% ;
+    width: 100%;
     margin: 0px;
     padding: 0px;
+    opacity: 0.3;
 }
+
 /* navigation menu styling */
-nav {
-    
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-nav > ul {
-    list-style: none;
-    margin-inline-start: -40px;
-    display: flex;
+
+nav ul li {
+    margin: 25px 50px 25px 0px;
 }
-nav > ul > li {
-    padding-right: 45px;
-    margin: 8px 0 8px;
+
+/* menu color */
+nav ul a {
+    color: black;
+    text-decoration: none;
 }
+
+/* about grey calor */
+#nav-about {
+    color: rgb(139, 139, 139) !important;
+}
+
 /* main image styling */
 .main-image {
     width: 100%;
+}
+
+/* article/section styling */
+article {
+    margin: 2% 0;
+}
+
+section {
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 33%;
+    font-size: 14px;
+}
+
+.right-section {
+    font-size: 18px;
+    width: 58%;
+}
+
+/* logos styling */
+.logos {
+    justify-content: stretch;
+    align-items: center;
+
+}
+
+.logos img {
+    width: 120px;
+    padding: 15px;
+}
+
+/* footer styling */
+
+
+iframe {            /* google maps styling */
+    width: 200px;
+    height: 200px;
+}
+
+footer, footer p {
+    background-color: rgb(103, 54, 205);
+    color: white;
+    padding: 5% 0;
+    font-size: 20px;
+}
+
+footer div {
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+footer ul li {
+    font-weight: bolder;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(253, 252, 252, 0.2);
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.lastLine {
+    border-bottom: none;
+}
+
+.footersCol {
+    width: 20%;
+}
+
+/*Mobile friendly */
+@media screen and (max-width: 420px) {
+
+
+    /* change flex direction to column and left/right margin to smaller */
+    .container {
+        flex-direction: column;
+        margin: 0 2%;
+        width: 100%;
+
+    }
+
+    /* makes main title smaller for mibile */
+    header div h1 {
+        font-size: 1.1em;
+    }
+
+    /* make h2 in section smaller */
+    article h2 {
+        font-size: 1.1em;
+    }
+
+    /* makes smaller space between nav menu items */
+    nav ul li {
+        margin: 5px 0 5px;
+    }
+
+    /* to make with 100%  */
+    article,
+    .left-section,
+    .right-section,
+    .footersCol {
+        width: 95%;
+    }
+  
+}
+
+/* Tablets friendly */
+@media screen and (max-width: 780px) {
+
+
+    /* change flex direction to column and left/right margin to smaller */
+    .container {
+        margin: 0 2%;
+        width: 100%;
+    }
+
+    /* makes main title smaller for mibile */
+    header div h1 {
+        font-size: 1.5em;
+    }
+
+    /* nav menu */
+    nav ul li {
+        padding: 15px 40px 15px 0px;
+
+    }
+
+    /* section */
+    section {
+        flex-direction: column;
+    }
+
+    /* make h2 in section smaller */
+    article h2 {
+        font-size: 1.1em;
+    }
+
+    /* makes smaller space between nav menu items */
+    nav ul li {
+        margin: 5px 0 5px;
+    }
+
+    /* to make with 100%  */
+    article,
+    .left-section,
+    .right-section {
+        width: 95%;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footersCol {
+
+        width: 100%;
+        margin: 10px;
+    }
+
 }
