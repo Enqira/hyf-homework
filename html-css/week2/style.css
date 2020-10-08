@@ -1,3 +1,97 @@
+/*Mobile friendly */
+@media screen and (max-width: 420px) {
+
+
+    /* change flex direction to column and left/right margin to smaller */
+    .container {
+        flex-direction: column;
+        margin: 0 2%;
+        width: 100%;
+
+    }
+
+    /* makes main title smaller for mibile */
+    header div h1 {
+        font-size: 1.1em;
+    }
+
+    /* make h2 in section smaller */
+    article h2 {
+        font-size: 1.1em;
+    }
+
+    /* makes smaller space between nav menu items */
+    nav ul li {
+        margin: 5px 0 5px;
+    }
+
+    /* to make with 100%  */
+    article,
+    .left-section,
+    .right-section,
+    .footersCol {
+        width: 95%;
+    }
+  
+}
+
+/* Tablets friendly */
+@media screen and (max-width: 780px) {
+
+
+    /* change flex direction to column and left/right margin to smaller */
+    .container {
+        margin: 0 2%;
+        width: 100%;
+    }
+
+    /* makes main title smaller for mibile */
+    header div h1 {
+        font-size: 1.5em;
+    }
+
+    /* nav menu */
+    nav ul li {
+        padding: 15px 40px 15px 0px;
+
+    }
+
+    /* section */
+    section {
+        flex-direction: column;
+    }
+
+    /* make h2 in section smaller */
+    article h2 {
+        font-size: 1.1em;
+    }
+
+    /* makes smaller space between nav menu items */
+    nav ul li {
+        margin: 5px 0 5px;
+    }
+
+    /* to make with 100%  */
+    article,
+    .left-section,
+    .right-section {
+        width: 95%;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footersCol {
+
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+/* Mobile / tablet friendly ends here */
+
 body {
     width: 100%;
     height: auto;
@@ -143,95 +237,3 @@ footer ul a {
     width: 20%;
 }
 
-/*Mobile friendly */
-@media screen and (max-width: 420px) {
-
-
-    /* change flex direction to column and left/right margin to smaller */
-    .container {
-        flex-direction: column;
-        margin: 0 2%;
-        width: 100%;
-
-    }
-
-    /* makes main title smaller for mibile */
-    header div h1 {
-        font-size: 1.1em;
-    }
-
-    /* make h2 in section smaller */
-    article h2 {
-        font-size: 1.1em;
-    }
-
-    /* makes smaller space between nav menu items */
-    nav ul li {
-        margin: 5px 0 5px;
-    }
-
-    /* to make with 100%  */
-    article,
-    .left-section,
-    .right-section,
-    .footersCol {
-        width: 95%;
-    }
-  
-}
-
-/* Tablets friendly */
-@media screen and (max-width: 780px) {
-
-
-    /* change flex direction to column and left/right margin to smaller */
-    .container {
-        margin: 0 2%;
-        width: 100%;
-    }
-
-    /* makes main title smaller for mibile */
-    header div h1 {
-        font-size: 1.5em;
-    }
-
-    /* nav menu */
-    nav ul li {
-        padding: 15px 40px 15px 0px;
-
-    }
-
-    /* section */
-    section {
-        flex-direction: column;
-    }
-
-    /* make h2 in section smaller */
-    article h2 {
-        font-size: 1.1em;
-    }
-
-    /* makes smaller space between nav menu items */
-    nav ul li {
-        margin: 5px 0 5px;
-    }
-
-    /* to make with 100%  */
-    article,
-    .left-section,
-    .right-section {
-        width: 95%;
-    }
-
-    #footer {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .footersCol {
-
-        width: 100%;
-        margin: 10px;
-    }
-
-}
