@@ -1,151 +1,159 @@
 <!DOCTYPE html>
-<html>
+<Html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <title>Mohammed Enqira</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />   
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap" rel="stylesheet">
+    <title>Css Flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body class="main">
-    <div class="container">
-        <!--main header, image, name and about me-->
-        <div class="main-info">
-            <img src="photo.png" class="profile-pic" alt="profile picture"> 
-            <div class="about-me">
-                <h3 class="main-name">Mohammed Enqira</h3>
-                <p class="descrive-myself">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>    
-        </div> 
-        <!--links to github, linkedIn and email-->
-        <div class="contact-links">
-            <a href="mailto:moenkira@yahoo.com" target="_blank"><img src="email.png" alt="email icon" class="contact-img"></a>
-            <a href="mailto:moenkira@yahoo.com" target="_blank" class="contact-text">moenkira@yahoo.com</a>
-            <a href="https://github.com/Enqira" target="_blank"><img src="github.png" alt="github icon" class="contact-img"></a>
-            <a href="https://github.com/Enqira" target="_blank" class="contact-text" >github.com/Enqira</a>
-            <a href="https://www.linkedin.com/in/mohammed-enqira-el-yousfi-18b75b158/" target="_blank"><img src="linkedin.png" alt="linkedin icon" class="contact-img"></a>
-            <a href="https://www.linkedin.com/in/mohammed-enqira-el-yousfi-18b75b158/" target="_blank" class="contact-text">linkedin.com/enqira</a>
-            <br>
-        </div>   
-    </div>
-    <!--main page-->
-    <div >
-        <!--skills-->
-        <div class="skills container-skills">
-            <h3 class=" h3text">SKILLS</h3>
-            
-            <ul class="front-end">
-                <p>Front-end</p>
-                <li>HTML/HTML5</li>
-                <li>CSS</li>
-                <li>ReactJS</li>
-                <li>Javascript</li>
-                <li>One more</li>
-            </ul>
-            <ul class="back-end">
-                <p>Back-end</p>
-                <li>Javascript</li>
-                <li>NodeJS</li>
-                <li>ExpressJS</li>
-                <li>MongoDB</li>
-                <li>MySQL</li>
-            </ul>
-            <ul class="others">
-                <p>Others</p>
-                <li>Git</li>
-                <li>Autocad</li>
-                <li>Adobe Suite</li>
-                <li>One more</li>
-                <li>One more</li>
-            </ul>
-                      
-        </div>
-        <!--Projects-->
-        <div class= "container-projects">
-            <h3 class="h3text">PROJECTS</h3>
-            
-            <!--Project 1-->
-            <div class="project-box">
-                <h3>Project 1</h3>
-                <div>
-                    <!-- Go live and source code buttons project 1-->
-                    <div class="project-links">
-                        <img src="live.png" alt="live icon" class="project-links-image"><a href="#" target="_blank" class="small-size-projects">Go live</a>
 
-                    </div>
-                    <div class="project-links ">
-                        <img src="github.png" alt="live icon" class="project-links-image">
-                        <a href="https://github.com/Enqira/hyf-homework/tree/master/html-css/week1" target="_blank" class="small-size-projects">Source code</a>
-                        
-                    </div>
-                    <!--project 1 description  -->
+<body>
+    <!-- upper header -->
+    <header>
+        <div class="fullTopHeader">
+            <div class="container mainHeader">
+                <h1>WEB DEVELOPMENT AS AN INDUSTRY</h1>
+                <P>an article about web development</P>
+            </div>
+        </div>
+        <!-- line under header, not inside the main container -->
+        <!-- so it can stetch to 0 margin -->
+        <hr class="line">
+        <!-- navigation -->
+        <nav id="navMenu">
+            <ul class="container">
+                <li><a href="#">home</a></li>
+                <li><a href="#" id="nav-about">about</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">our office</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main image (not included in main container) -->
+    <!-- so it can stetch to margin-left/right 0 -->
+    <img src="image-main.PNG" title="office" alt="office" class="main-image">
+    <article>
+        <!-- firts section- left section-->
+        <section class="container">
+            <div class="left-section">
+                <h3>WEB DEVELOPMENT AS AN INDUSTRY</h3>
+                <p>
+                    Example of dramatic transformation in communication and commerce
+                    led by web deb development include e-com-merce. Online auction
+                    sites such as eBay have changed the way consumers find and
+                    purchase goods and services. Online retailers such as Amazon.com
+                    and Buy.com (among many others) have transformed the shopping and
+                    bargain-hunting experience for many consumers.
+                </p>
+            </div>
+            <!-- right side first section -->
+            <div class="right-section">
+                <h2>PRACTICAL WEB DEVELOPMENT</h2>
+                <p>
+                    Since the commercialization of the web, web development has been a
+                    growing industry. The growth of this industry is being driven by
+                    businesses wishing to use their website to sell products and
+                    services to customers.[1]
+                </p>
+                <p>
+                    There is open source of software for web development like
+                    berkeleyDB, GlassFish, LAMP (Linux, Apache, MySQL, PHP) stack and
+                    Perl?Plack. This has kept the cost of growth of the industry has
+                    been the rise of easy-to use WYSIWYG web web-development software,
+                    such as Adobe Dreamweaver, BlueGriffon and Microsoft Visual Studio.
+                    Knowledge of Hyper Text Markup Language (HTML) or of programming
+                    languages is still required to use such software, but the basics can
+                    be learned and implemented quickly with the help of help files,
+                    technical books, internet tutorials, or face-to-face training.
+                </p>
+                <p>
+                    an ever-growing set of tools and technologies have helped developers
+                    build more dynamic and interactive websites. Further, web developers
+                    now help to deliver applications as web services which were
+                    traditionally only available as applications on a desk-based
+                    computer. This has allowed for many opportunities to decentralize
+                    information and media distribution. Examples can be seen with the
+                    rise of cloud services such as Adobe Creative Cloud, Dropbox and
+                    Google Docs.These web services allow users to interact with
+                    applications form many locations, web services allow users to
+                    interact with applications from many locations, instead of being
+                    tied to a specific workstation for their application environment.
+                </p>
+            </div>
+        </section>
+        <!-- second section  -->
+        <section class="container">
+            <!-- second section left side -->
+            <div class="left-section">
+                <h3>THE GALERRY</h3>
+                <p>images to the right should be added as links. Each image should be responsive </p>
+            </div>
+            <!-- clickeble logos -->
+            <div class="right-section">
+                <h2>LOGOTYPES ON THE WEB</h2>
+                <br>
+                <div class="logos">
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
+                    <a href="#"><img src="logo.png" title="logo" alt="logo"></a>
                 </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
             </div>
-            <!--Project 2-->
-            <img src="coming-soon.jpg" alt= "coming-soon" class="pic-project">
-            <div class="project-box">
-                <h3>Project 2</h3>
-                <div>
-                    <!-- Go live and source code buttons project 1-->
-                    <div class="project-links">
-                        <img src="live.png" alt="live icon" class="project-links-image"><a href="#" target="_blank" class="small-size-projects">Go live</a>
-                    </div>
-                    <div class="project-links ">
-                        <img src="github.png" alt="live icon" class="project-links-image">
-                        <a href="https://github.com/Enqira/hyf-homework/tree/master/html-css/week1" target="_blank" class="small-size-projects">Source code</a>
-                        
-                    </div>
-                </div>
-                <!--project 2 description  -->
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+        </section>
+    </article>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- first left -->
+            <div class="footersCol ">
+                <h3>FIND US</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.558559087309!2d12.538587415785791!3d55.66188658052919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253832f5f32f7%3A0xaeff0e7466c2981b!2sEnghavevej%2080c%2C%202450%20K%C3%B8benhavn!5e0!3m2!1sen!2sdk!4v1602074146801!5m2!1sen!2sdk"
+                  >
+                </iframe><br>
+                <h4>Hack You Future Copenhagen</h4>
+                <p>M-Th: 7am - 4pm</p>
+                <p>Fri-Sat: 9am - 8pm</p>
             </div>
-            <img src="coming-soon.jpg" alt= "coming-soon" class="pic-project">
-            
-             
-
-        </div>
-        
-        <!--Work experience-->
-        <div class= "container-experience">
-            <h3 class="h3text">WORK EXPERIENCE</h3>
-             
-            <!-- work experience 2 -->
-            <div class="work-exp1">
-                <h3>Fixpress</h3>
-                <p class="small-size">Years: 2019-2020 - Location: Copenhagen.</p>
-                <p>Fixpress is an electronic repair shop, Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years ol </p>
+            <!-- second column -->
+            <div class="footersCol">
+                <h3>ABOUT THIS PAGE</h3>
+                <p>This is a footer for homework O2</p>
 
             </div>
-            <!-- work experience 2 -->
-            <div class="work-exp2">
-                <h3>PC-Box, Let's Play 2000</h3>
-                <p class="small-size">Years: 2018 - Location: Copenhagen.</p>
-                <p>Let's Play 2000 is Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years ol </p>
+            <!-- third column -->
+            <div class="footersCol">
+                <h3>ARCHIVES</h3>
+                <ul>
+                    <li><a href="#">March 2016</a></li>
+                    <li><a href="#">February 2016</a></li>
+                    <li class="lastLine"><a href="#">January 2016</a></li>
+                </ul>
+            </div>
+            <!-- fourth column -->
+            <div class="footersCol">
+                <h3>NAVIGATION</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="lastLine"><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-            </div>
-        </div>
-        <!-- Education -->
-        <div class="container-education">
-            <h3 class="h3text">EDUCATION</h3>
-            
-            <div>
-                <p class="education1"> Full-stack web development at HackYourFuture Coding Shcool Copenhagen. </p>
-                <p class="education1">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-            </div>
-        </div>       
-    </div>
-    
-        <div>
-            <img src="night.png" alt="background image" class="f-image">
-        </div>
-    
-    <div class="footer">
-        <p>Made by Mohammed Enqira</p>
-    </div>
-    
-    
-    
+
 </body>
-</html>
+
+</Html>
