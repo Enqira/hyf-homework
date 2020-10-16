@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>First form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navi_bar">
+        
+        <nav>
+            <img src= "logo.png" alt="shipping logo"width="100" white="80" >
+            <ul>
+              <li><a href="step1.html">step 1</a></li>
+                <li><a href="step2.html">step 2</a></li>
+                <li><a href="step3.html">step 3</a></li>
+                <li><a href="step4.html">step 4</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+
+    
+        <h1> Signup to your Customer Trailer.com</h1>
+            <p class="p1"> Sign up below save up to 70% on apparel, hand bags and cosmetics. Our agents are busy picking the best offers that match your performance and style. Every week we will send you a handæpicked selection- we just need to know a few details about your first..
+
+            </p>
+        
+        <h2> Step 2/5 How can we reach you?<br> Progress
+        </h2>
+        <div>
+           <progress id="myBar" max="100" value="50" id="progress"></progress>
+        </div>
+            <p class="p1"> We will probably need to stay in touch somehow. Let it know how we can reach you </p>
+
+         <form action="step3.html" method="GET">
+            <div>
+                <label for="email"><b>Email</b></label><span style="color:red;">*</span>
+                <input type="email" name="email" id="email"  pattern="^[^ ]+@[^ ]+\.[a-z]{2,6}$" required>
+
+                <label for="phone"><b>Mobile</b></label>
+                <input type="tel" name="phone" id="phone"pattern="^[0-9]{8,8}$" required > 
+
+                <label for="psw"><b>Password</b></label><span style="color:red;">*</span>
+                 <input type="password" name="psw" id="psw" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"required> 
+
+                 <label for="psw-repeat"><b>Repeat Password</b></label><span style="color:red;">*</span>
+                 <input type="password" name="psw-repeat" id="psw-repeat" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required> 
+            </div>
+            <h2> I want to signup for the news letter</h2>
+            <div>
+                <label for="news"><b>Weekly News </b></label>
+                <input type="radio" id="news" name="click_news">
+                
+                <label for="M_news"> <b>Monthly News </b></label>
+                <input type="radio" id="M_news" name="click_news">
+                
+                <label for="not_news"> <b>Don't Send me News</b></label>
+                <input type="radio" id="not_news" name="click_news">
+                
+            </div>
+            <input type="submit" value="Next Step" class="submit">
+
+         </form>
+        </main>
+    </div>
+         
+  </body>
+
+</html>

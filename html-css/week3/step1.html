@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>First form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navi_bar">
+
+                <nav>
+                    <img src="logo.png" alt="shipping logo" width="100" white="80">
+                    <ul>
+                        <li><a href="step1.html">step 1</a></li>
+                        <li><a href="step2.html">step 2</a></li>
+                        <li><a href="step3.html">step 3</a></li>
+                        <li><a href="step4.html">step 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+
+            <h1> Signup to your Customer Trailer.com</h1>
+            <p class="p1"> Sign up below save up to 70% on apparel, hand bags and cosmetics. Our agents are busy picking
+                the best offers that match your performance and style. Every week we will send you a handæpicked
+                selection- we just need to know a few details about your first..
+
+            </p>
+            <h2> Step 2/5 Tells Us Who You Are?</h2>
+            <h3> Progress</h3>
+            <div>
+                <progress id="myBar" max="100" value="35" id="progress"></progress>
+            </div>
+            <p class="p1"> Nice to meet you ! Please spend a minute to get to know each other.
+                Please enter the following:</p>
+
+            <form action="step2.html" method="POST">
+                <!-- Client info -->
+                <div>
+                    <div class="info">
+                        <label for="fname">First name</label><span style="color:red;">*</span>
+                        <input id="fname" type="text" name="fname" required />
+
+                        <label for="lname">Last name</label><span style="color:red;">*</span>
+                        <input id="lname" type="text" name="lname" required />
+                    </div>
+                    <div class="info">
+                        <label for="country">Country</label><span style="color:red;">*</span>
+                        <select id="country" name="country" title="Select Country" required>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Finland">Finland</option>
+
+                        </select> <br> <br>
+                    </div>
+                    <div class="info">
+                        <label for="address">Street Address</label><span style="color:red;">*</span>
+                        <input id="st_address" type="text" name="address" required>
+
+
+                        <label for="postal">Post code</label><span style="color:red;">*</span>
+                        <input id="postal" type="text" name="postal" required maxlength="4" pattern="[0-9]*">
+                    </div>
+                    <p class="p1">Use the same address for shipping? Uncheck below to fill out for separate shipping
+                        address.</p>
+                </div>
+                <!-- Client shiping adress in case is not the same adress  -->
+                <div>
+                    <div>
+                        <label> Shipping Address</label>
+                        <input type="checkbox" name="secondAdress" id="sameAdressToggle" checked="checked">
+                    </div>
+                    <!-- Colapses from here -->
+                    <div class="secondAdress">
+                        <h2> Shipping address </h2>
+                        <div class="info">
+                            <label for="fname">First name</label><span style="color:red;">*</span>
+                            <input id="fname" type="text" name="fname" required />
+
+                            <label for="lname">Last name</label><span style="color:red;">*</span>
+                            <input id="lname" type="text" name="lname" required />
+                        </div>
+                        <div class="info">
+                            <label for="country">Country</label><span style="color:red;">*</span>
+                            <select id="country" name="country" title="Select Country" required>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Finland">Finland</option>
+                            </select> <br> <br>
+                        </div>
+                        <div class="info">
+                            <label for="address">Street Address</label><span style="color:red;">*</span>
+                            <input id="st_address" type="text" name="address" required>
+
+
+                            <label for="postal">Post code</label><span style="color:red;">*</span>
+                            <input id="postal" type="text" name="postal" required maxlength="4" pattern="[0-9]*">
+                        </div>
+                    </div>
+                    <!-- til here colapses -->
+                </div>
+                <!-- Clients profile descripcion -->
+                <div class="info">
+                    <label for="profile" class="profile_description">Profile Description <span>Please provide a
+                            short
+                            description of yourself</span></label>
+                    <textarea id="profile" rows="8" cols="50" maxlength="100"></textarea>
+                </div>
+
+                <input type="submit" value="Next Step" class="submit">
+
+
+
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
