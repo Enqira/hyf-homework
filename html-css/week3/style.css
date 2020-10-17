@@ -1,71 +1,80 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     display: block;
     padding: 2em;
-    
-    
+    max-width: 1400px;
+
 
 }
-.container{
-    margin: 0 ;
-    padding: 0 ;    
+
+.container {
+    margin: 0;
+    padding: 0;
 }
-.navi_bar{
-    width: 100%;  
+
+.navi_bar {
+    width: 100%;
     background-color: #77889900;
-    padding:5px;
+    padding: 5px;
 }
-nav ul  {
-    display:flex;
+
+nav ul {
+    display: flex;
     flex-direction: row;
-    float:right;
+    float: right;
     list-style-type: none;
-    
-
 }
-nav ul li a{
-    padding:10px;
+
+nav ul li a {
+    padding: 10px;
     font-size: 20px;
-    color:rgb(118, 182, 255)
-
-
+    color: rgb(118, 182, 255)
 }
-a:link { 
-    text-decoration: none; 
-} 
-a:hover { 
-    background-color: coral;
-} 
-main{
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgba(51, 149, 240, 0.08);
+}
+
+main {
     padding: 3em 0;
-    clear:both;
+    clear: both;
 }
-label{
+
+label {
     width: 80px;
     text-align: end;
-    display:inline-block;
+    display: inline-block;
     margin-left: 3em;
     margin-right: 2em;
+    
 }
-/* for text size and space eg: FirstName and written area*/
-form label{
+
+/* text size and space*/
+form label {
     font-weight: 600;
-    margin-right: 0.5em ;
-    height:3em;
+    margin-right: 0.5em;
+    height: 3em;    
 }
-form input{
+
+form input {
     border: 1px solid black;
     font-size: initial;
     height: 3em;
     width: 35%;
 }
-form select{
+
+form select {
     border: 1px solid rgb(12, 10, 10);
     font-size: 1em;
     height: 3em;
@@ -73,133 +82,134 @@ form select{
     margin-top: 1em;
 }
 
-.p1{
-    text-align:justify;
+.p1 {
+    text-align: justify;
     font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 3em;
     margin-bottom: 3em;
 }
+
 #progress {
     width: 40%;
     height: 30px;
     background-color: #65b3af;
     border: 2px solid black;
-    
-  }
-  #mybar{
-      width: 40%;
-      height: 40px;
-      background-color: chartreuse;
-      border: 2px solid black;
-  }
-  textarea{
-      width: 60%;
-      overflow:auto;
-      vertical-align: top;
-      
-  }
-  
-  /* to hide Second shiping adress */
-   .secondAdress {
-        opacity: 0;
-        height: 0;
-  }
-  
-  #sameAdressToggle input:not(:checked) .secondAdress {
-    opacity: 1;
-    
-    
-  }
 
- 
+}
 
-  .submit{
-      float:right;
-      background-color: lightslategrey;
-      font-size: 1.2em;
-      text-align: center;
-      width:14em;
-      margin-top: 2em;
-      text-decoration: none;
-  }
-  .profile_description span{
-      display: inline-block;
-      font-size: 12px;
-      font-style: italic;
-      text-align:left;
-    
-  }
-  
-  input[type="checkbox"]{
-      width: 5%;
+#mybar {
+    width: 40%;
+    height: 40px;
+    background-color: chartreuse;
+    border: 2px solid black;
+}
 
-  }
-  input[type="radio"]{
+textarea {
+    width: 60%;
+    overflow: auto;
+    vertical-align: top;
+
+}
+
+/* to hide Second shiping adress */
+
+form input:checked  ~ form div #secondAdress{
+opacity: 0;
+height: 0;
+}
+
+
+.submit {
+    float: right;
+    background-color: lightslategrey;
+    font-size: 1.2em;
+    text-align: center;
+    width: 14em;
+    margin-top: 2em;
+    text-decoration: none;
+}
+
+.profile_description span {
+    display: inline-block;
+    font-size: 12px;
+    font-style: italic;
+    text-align: left;
+
+}
+
+input[type="checkbox"] {
+    width: 5%;
+
+}
+
+input[type="radio"] {
     width: 10%;
 
 }
-#select1, #select2, #select3,
-#select4, #select5, #select6,
-#select7,  #select8{
-    
+
+#select1,
+#select2,
+#select3,
+#select4,
+#select5,
+#select6,
+#select7,
+#select8 {
+
     width: 60px;
     text-align: middle;
-    display:inline-block;
+    display: inline-block;
     margin-left: 2em;
     margin-right: 3em;
-    
-    
+
+
 }
 
 .column {
     float: left;
     width: 20%;
     padding: 10px;
-    margin:20px;
-  }
-  
-  /* Clearfix (clear floats) */
-  .row::after {
+    margin: 20px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
     content: "";
     clear: both;
     display: table;
-  }
-  
- 
-  @media screen and (max-width: 44em) {
-      /*
-   nav ul {
-    display: flex;
-    flex-grow: 2;
-    flex-shrink: 1;
-    padding: 0 25px;
-    flex-basis: 75%;
-    }*/
+}
+
+
+@media screen and (max-width: 44em) {
+
     nav ul {
         display: block;
         width: 100%;
     }
-    .container{
+
+    .container {
         margin: 0;
         padding: 5px;
     }
-    .ship{
+
+    .ship {
         width: 100%;
     }
-    a:hover { 
+
+    a:hover {
         background-color: red;
         position: fixed;
-        
+
     }
-        
- 
+
+
     form input,
     form select,
     form label {
-    overflow: hidden;
-    width: 100%;
-    
+        overflow: hidden;
+        width: 100%;
+
     }
 
     #apparal,
@@ -207,32 +217,41 @@ form select{
     #Accessories,
     #shoes,
     #handbags {
-      width: 25%;
+        width: 25%;
     }
 
     textarea {
-      width: 100%;
+        width: 100%;
     }
+
     .submit {
-      width: 100%;
+        width: 100%;
     }
+
     #news,
     #M-news,
     #not-news {
-      margin-left: 3em;
-      margin-top: 1em;
-      width: 15%;
+        margin-left: 3em;
+        margin-top: 1em;
+        width: 15%;
     }
+
     #month,
     #year,
     #cvv {
-      width: 100%;
+        width: 100%;
     }
-    #select1, #select2, #select3,
-    #select4, #select5, #select6,
-    #select7,  #select8{
 
-    width: 100%;
+    #select1,
+    #select2,
+    #select3,
+    #select4,
+    #select5,
+    #select6,
+    #select7,
+    #select8 {
 
+        width: 100%;
+
+    }
 }
-  }
