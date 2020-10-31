@@ -1,7 +1,7 @@
 
 function calculateIfhouseIsExpensive (name, wide, deep, hight, gardenSizeInM2, houseCost){
-    volumeInMeters = wide * deep * hight;
-    housePrice = (volumeInMeters * 2.5 * 1000) + (gardenSizeInM2 * 300);
+    const volumeInMeters = wide * deep * hight;
+    const housePrice = (volumeInMeters * 2.5 * 1000) + (gardenSizeInM2 * 300);
     if (housePrice > houseCost){
         console.log(name + " bougth the house for " + houseCost + ". The calculated value of this house is: " + housePrice + ". It was a good purshase!");
     }
