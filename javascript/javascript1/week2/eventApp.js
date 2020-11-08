@@ -3,9 +3,9 @@ var weekDays = ["Sunday","Monday","tuesday","Wednesday ","Thursday","Friday","Sa
 
 function getEventWeekday(daysLeft) {
     
-    var eventDate = new Date()
+    let eventDate = new Date()
     eventDate.setDate(new Date().getDate() + daysLeft)
-    var eventDayNum = eventDate.getDay()
+    const eventDayNum = eventDate.getDay()
     eventDay = weekDays[eventDayNum]
     return eventDay
 }
