@@ -176,7 +176,8 @@ function setTimer(){
     for (let i=0; i<splitedCommand.length; i++){
         if (splitedCommand[i] === "minutes"){
             let minLeft = parseInt(splitedCommand[i-1]) 
-            setTimeout(timerDone, minLeft*1000)
+            let secLeft = minLeft*60
+            setTimeout(timerDone, secLeft*1000)
         }
     }
     return "working"
