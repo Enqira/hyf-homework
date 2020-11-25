@@ -184,7 +184,6 @@ function setTimer(){
 }
 
 function timerDone(){
-    console.log("timer done")
     return "timer done"
 }
 
