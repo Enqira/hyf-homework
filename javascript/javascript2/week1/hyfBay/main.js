@@ -9,9 +9,8 @@ function renderProducts(products) {
     const ulTag = document.querySelector("ul");
     const liTag = document.createElement("li");
     const nameTag = document.createElement("h3");
-    const pricetag = document.createElement("span");
-    const ratingTag = document.createElement("span");
-    const br = document.createElement("br");
+    const pricetag = document.createElement("div");
+    const ratingTag = document.createElement("div");
 
     // populate tags
     nameTag.innerHTML = products[i].name;
@@ -21,7 +20,6 @@ function renderProducts(products) {
     // append tags
     liTag.appendChild(nameTag);
     liTag.appendChild(pricetag);
-    liTag.appendChild(br);
     liTag.appendChild(ratingTag);
     ulTag.appendChild(liTag);
   }
