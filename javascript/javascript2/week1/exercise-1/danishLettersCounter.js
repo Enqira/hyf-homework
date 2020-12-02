@@ -3,36 +3,32 @@ const danishString2 = "Blå grød med røde bær";
 
 function countDanishLetters(danishString) {
   let result = { total: 0 };
-  let å = 0;
-  let æ = 0;
-  let ø = 0;
+  let å = 0,
+    ø = 0,
+    æ = 0;
+
   for (let i = 0; i < danishString.length; i++) {
     if (danishString[i] === "å") {
-      if (result.hasOwnProperty("å")) {
+      if ("å" in result) {
         result.å++;
-        result.total++;
       } else {
         result.å = 1;
-        result.total++;
       }
-    }
-    if (danishString[i] === "æ") {
-      if (result.hasOwnProperty("æ")) {
+      result.total++;
+    } else if (danishString[i] === "æ") {
+      if ("æ" in result) {
         result.æ++;
-        result.total++;
       } else {
         result.æ = 1;
-        result.total++;
       }
-    }
-    if (danishString[i] === "ø") {
-      if (result.hasOwnProperty("ø")) {
+      result.total++;
+    } else if (danishString[i] === "ø") {
+      if ("ø" in result) {
         result.ø++;
-        result.total++;
       } else {
         result.ø = 1;
-        result.total++;
       }
+      result.total++;
     }
   }
   return result;

@@ -1,11 +1,8 @@
 const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
 function findShortestWord(danishWords) {
-  let shortestWord = "";
+  let shortestWord = danishWords[0];
   for (let i = 0; i < danishWords.length; i++) {
-    if (shortestWord === "") {
-      shortestWord = danishWords[i];
-      console.log(shortestWord.length);
-    } else if (shortestWord.length > danishWords[i].length) {
+    if (shortestWord.length > danishWords[i].length) {
       shortestWord = danishWords[i];
     }
   }
