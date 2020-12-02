@@ -12,6 +12,9 @@ const spiritAnimals = [
   "The black puma",
 ];
 
+document.getElementById("button").addEventListener("click", btnClicked);
+document.getElementById("ser-button").addEventListener("click", secBtnClicked);
+
 function btnClicked() {
   let ranNum = GetRanNum();
   const userInput = document.getElementById("user-input");
