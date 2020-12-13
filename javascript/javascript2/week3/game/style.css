@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(140, 245, 255);
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.gameBorder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.counters {
+  display: flex;
+}
+.players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
