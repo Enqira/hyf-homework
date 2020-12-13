@@ -28,11 +28,11 @@ let onlyRating = movies
 // 6 Count the total number of movies containing x keyword
 let countedArray = movies.filter(
   (movie) =>
-    movie.title.includes("Surfer") |
-    movie.title.includes("Alien") |
-    movie.title.includes("Benjamin")
+    movie.title.toLowerCase().includes("Surfer".toLowerCase()) |
+    movie.title.toLowerCase().includes("Alien".toLowerCase()) |
+    movie.title.toLowerCase().includes("Benjamin".toLowerCase())
 );
-
+console.log(countedArray);
 // 7 Array of duplicated words in title
 const duplicatedMovies = movies.filter((movie) => {
   const movieTitle = movie.title.toLowerCase().split(" ");
