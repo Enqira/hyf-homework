@@ -7,7 +7,7 @@ const getWeather = () => {
 
 const getData = () => {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=ec0b36c9b8befd8c478cf0ce6d7dda9f`
+    `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=`
   )
     .then(res => (!res.ok ? alert("city not found") : res.json()))
     .then(data => {
