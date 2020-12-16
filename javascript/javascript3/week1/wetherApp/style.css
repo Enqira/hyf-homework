@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(201, 195, 255);
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-weight: bold;
+}
+input,
+button {
+  border: 2px solid rgb(158, 158, 158);
+  padding: 10px;
+  border-radius: 25px;
+  outline: none;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+}
