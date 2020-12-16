@@ -1,0 +1,5 @@
+EONET, The Earth Observatory Natural Event Tracker
+
+EONET is a public NASA API that allow users to browse the entire globe daily and look for natural events as they occur.
+Storms spotted in the tropics, dust storms over deserts, forest fires in the summers etc...
+When you make a request to this API you will get an array of object with all the data needed including coordinates of the event that you can use to create for exemple a map of current natural  event
