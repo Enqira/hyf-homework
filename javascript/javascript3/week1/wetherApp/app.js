@@ -7,7 +7,7 @@ const getWeather = () => {
 
 const getData = () => {
   fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=`
+    `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=ec0b36c9b8befd8c478cf0ce6d7dda9f`
   )
     .then(res => (!res.ok ? alert("city not found") : res.json()))
     .then(data => {
@@ -67,4 +67,27 @@ const convertTime = time => {
   const h = date.getHours()
   const min = date.getMinutes()
   return `${h}:${min}`
+}
+
+// EXTRA: display a quote
+fetch("https://type.fit/api/quotes")
+  .then(function (response) {
+    return response.json()
+  })
+  .then(function (data) {
+    getQuotes(data)
+  })
+
+const getQuotes = data => {
+  const ranNum = Math.floor(Math.random() * 1643 + 0)
+
+  const ul = document.querySelector("ul")
+
+  const text = document.createElement("li")
+  const author = document.createElement("li")
+
+  text.textContent = `"${data[ranNum].text}"`
+  author.textContent = data[ranNum].author
+  ul.appendChild(text)
+  ul.appendChild(author)
 }
