@@ -1,17 +1,17 @@
 const resolveAfterFunc = resolveAfter => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve()
+      resolve("I am called asynchronously")
     }, resolveAfter * 1000)
   })
 }
 
-resolveAfterFunc(5).then(() => console.log("I am called asynchronously"))
+// with .then
+resolveAfterFunc(5).then(res => console.log(res))
 
 // with asyn await
 async function asyncAwaitFunc(resolveAfter) {
-  await resolveAfterFunc(resolveAfter).then(() =>
-    console.log("I am async func")
-  )
+  const res = await resolveAfterFunc(resolveAfter)
+  console.log(res)
 }
 asyncAwaitFunc(3)
