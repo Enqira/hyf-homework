@@ -1,0 +1,13 @@
+{
+    "id": "01",
+    "name": "myComputer",
+    "specifications": {
+        "cpu": "Intel i7",
+        "ram": "16 GB",
+        "SSD": "512 GB",
+        "Graphics": "nvidia RTX 2700",
+        "OS": "Microsoft Windows 10",
+        "Screen size": "27 inches"
+    },
+    "year": "2018"
+}
