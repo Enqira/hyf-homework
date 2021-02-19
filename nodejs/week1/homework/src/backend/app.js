@@ -11,12 +11,17 @@ app.get("/", async (request, response) => {
   response.send("Meal Sharing Web App")
 })
 
+// get meal reviews
+const getMealReviews = meal => {
+  mealReviews = reviews.filter(review => review.mealId === meal.id)
+  return mealReviews
+}
+
 // get all meals
 app.get("/meals", async (req, res) => {
   const mealsArr = []
   meals.map(meal => {
-    const mealReviews = reviews.filter(review => review.mealId === meal.id)
-    meal.reviews = mealReviews
+    meal.reviews = getMealReviews(meal)
     mealsArr.push(meal)
   })
   res.send(mealsArr)
@@ -27,8 +32,7 @@ app.get("/cheap-meals", async (req, res) => {
   const mealsArr = []
   const cheapMeals = meals.filter(meal => meal.price < 100)
   cheapMeals.map(meal => {
-    const mealReviews = reviews.filter(review => review.mealId === meal.id)
-    meal.reviews = mealReviews
+    meal.reviews = getMealReviews(meal)
     mealsArr.push(meal)
   })
   res.send(mealsArr)
@@ -37,10 +41,9 @@ app.get("/cheap-meals", async (req, res) => {
 // get just large meals
 app.get("/large-meals", async (req, res) => {
   const mealsArr = []
-  const cheapMeals = meals.filter(meal => meal.maxNumberOfGuests > 4)
-  cheapMeals.map(meal => {
-    const mealReviews = reviews.filter(review => review.mealId === meal.id)
-    meal.reviews = mealReviews
+  const largeMeals = meals.filter(meal => meal.maxNumberOfGuests > 4)
+  largeMeals.map(meal => {
+    meal.reviews = getMealReviews(meal)
     mealsArr.push(meal)
   })
   res.send(mealsArr)
