@@ -11,9 +11,6 @@ function App() {
       <AddTodo />
     </div>
   )
-
-  //   <AddTodo />
-  //   ;<Timer />
 }
 
 export default App
