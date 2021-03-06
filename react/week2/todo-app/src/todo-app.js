@@ -58,17 +58,34 @@ function AddTodo() {
     <>
       <button onClick={AddNewTodo}>Add Todo</button>
       <ul>
-        {todoList.map(item => (
-          <Todo
-            item={item}
-            key={item.id}
-            reMove={() => removeItem(item.id)}
-            styling={() => setStyling(item.id)}
-          />
-        ))}
+        {
+          todoList.length > 0 ? (
+            todoList.map(item => (
+              <Todo
+                item={item}
+                key={item.id}
+                reMove={() => removeItem(item.id)}
+                styling={() => setStyling(item.id)}
+              />
+            ))
+          ) : (
+            <li>TODO LIST EMPTY!</li>
+          )
+
+          //   console.log(todoList)
+        }
       </ul>
     </>
   )
 }
 
 export default AddTodo
+
+//    {todoList.map(item => (
+//           <Todo
+//             item={item}
+//             key={item.id}
+//             reMove={() => removeItem(item.id)}
+//             styling={() => setStyling(item.id)}
+//           />
+//         ))}
