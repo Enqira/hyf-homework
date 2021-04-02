@@ -1,14 +1,11 @@
 import { useState, useEffect } from "react"
 
-const URL =
-  "https://gist.githubusercontent.com/benna100/391eee7a119b50bd2c5960ab51622532/raw"
-
 function Todo({ todo, Check, Delete, Edit, editTime }) {
-  const [Editing, setEditing] = useState(false)
+  const [editing, setEditing] = useState(false)
 
   const { description, checked, deadline, id } = todo
 
-  function editing(event) {
+  function onEditDescription(event) {
     const value = event.target.value
     Edit(id, value)
   }
@@ -21,12 +18,12 @@ function Todo({ todo, Check, Delete, Edit, editTime }) {
   return (
     <div>
       <div style={{ textDecoration: checked ? "line-through" : "none" }}>
-        {Editing ? (
-          <input type="text" value={description} onChange={editing} />
+        {editing ? (
+          <input type="text" value={description} onChange={onEditDescription} />
         ) : (
           <h3>{description}</h3>
         )}
-        {Editing ? (
+        {editing ? (
           <input
             type="date"
             id="deadline"
@@ -40,8 +37,8 @@ function Todo({ todo, Check, Delete, Edit, editTime }) {
       </div>
       <input type="checkbox" checked={checked} onChange={Check} />
       <button onClick={Delete}>Delete</button>
-      <button onClick={() => setEditing(!Editing)}>
-        {Editing ? "Update" : "Edit"}
+      <button onClick={() => setEditing(!onEditDescription)}>
+        {editing ? "Update" : "Edit"}
       </button>
     </div>
   )
@@ -60,7 +57,7 @@ function AddTodoForm({ addTodo }) {
     setDeadline("")
   }
 
-  const editing = event => {
+  const onEditDescription = event => {
     const value = event.target.value
     console.log(value)
     setDescription(value)
@@ -80,7 +77,7 @@ function AddTodoForm({ addTodo }) {
           name="description"
           id="description"
           value={description}
-          onChange={editing}
+          onChange={onEditDescription}
         />
       </div>
       <div>
@@ -102,14 +99,16 @@ function Todos() {
   const [todos, setTodos] = useState([])
 
   useEffect(() => {
-    fetch(URL)
+    fetch(
+      "https://gist.githubusercontent.com/benna100/391eee7a119b50bd2c5960ab51622532/raw"
+    )
       .then(res => res.json())
       .then(data => {
         setTodos(data)
       })
   }, [])
 
-  function checking(id) {
+  function checkTodo(id) {
     setTodos(prevTodos => {
       return prevTodos.map(todo => {
         if (todo.id === id) {
@@ -196,7 +195,7 @@ function Todos() {
             <Todo
               key={todo.id}
               todo={todo}
-              Check={() => checking(todo.id)}
+              Check={() => checkTodo(todo.id)}
               Delete={() => deleteTodo(todo.id)}
               Edit={Edit}
               editTime={editTime}
